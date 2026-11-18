@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4ef" />
+    <title>Juicyplum — culture is better together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Juicyplum home"><span class="brand-mark">j</span><span>juicyplum<span class="brand-dot">.</span></span></a>
+      <div class="profile"><div class="avatar avatar-you">A</div><div><strong>Alex Morgan</strong><span>Personal space</span></div><button class="icon-button" aria-label="Profile menu">⌄</button></div>
+      <nav aria-label="Main navigation">
+        <p class="nav-label">YOUR SPACE</p>
+        <a class="nav-link active" href="#home"><span>⌂</span> Home</a>
+        <a class="nav-link" href="#rooms"><span>◉</span> Watch & listen <b class="nav-count">3</b></a>
+        <a class="nav-link" href="#library"><span>▤</span> My library</a>
+        <a class="nav-link" href="#friends"><span>♧</span> Friends</a>
+        <p class="nav-label nav-label-spaced">EXPLORE</p>
+        <a class="nav-link" href="#books"><span>▧</span> Books & writing</a>
+        <a class="nav-link" href="#music"><span>♫</span> Music</a>
+        <a class="nav-link" href="#film"><span>▻</span> Film & TV</a>
+      </nav>
+      <section class="sidebar-rooms" id="rooms"><div class="side-heading"><p class="nav-label">LIVE ROOMS</p><button class="text-icon" aria-label="Create a room">＋</button></div><a class="mini-room" href="#room-theatre"><span class="live-dot"></span><span>Sunday cinema club</span><small>8</small></a><a class="mini-room" href="#room-listening"><span class="live-dot music-dot"></span><span>Soft sounds, vol. 4</span><small>5</small></a><a class="mini-room" href="#room-reading"><span class="live-dot book-dot"></span><span>Read a little, daily</span><small>12</small></a><button class="create-room">＋ &nbsp; Start a room</button></section>
+      <div class="sidebar-bottom"><a href="#settings">⚙ &nbsp; Settings</a><span>Made for the things we love.</span></div>
+    </aside>
+
+    <main class="main" id="home">
+      <header class="topbar"><div class="breadcrumbs">Your space <span>/</span> <strong>Home</strong></div><div class="top-actions"><button class="reader-toggle" id="reader-toggle">▤ <span>Read</span></button><button class="search-button">⌕ <span>Search anything</span><kbd>⌘ K</kbd></button><button class="icon-button notifications" aria-label="Notifications">♧<i></i></button><div class="avatar avatar-you avatar-small">A</div></div></header>
+      <div class="content">
+        <section class="welcome"><div><p class="eyebrow">TUESDAY, NOVEMBER 18</p><h1>Good afternoon, Alex<span class="sun">✳</span></h1><p class="welcome-copy">A little inspiration, and good company for whatever you’re into.</p></div><button class="button button-dark" id="open-room">＋ &nbsp; Start a shared room</button></section>
+
+        <section class="feature-grid" aria-label="Featured community rooms">
+          <article class="feature-card cinema-card" id="room-theatre"><div class="card-shade"></div><div class="card-top"><span class="live-pill"><i></i> HAPPENING NOW</span><button class="more-button" aria-label="More options">•••</button></div><div class="feature-content"><p class="eyebrow light">FILM CLUB · HOSTED BY MAYA</p><h2>One more<br />for the road.</h2><p class="feature-detail">The Farewell <span>·</span> 1h 40m</p><div class="feature-bottom"><button class="button button-light join-room">Join the room <span>↗</span></button><div class="attendees"><div class="avatar-stack"><span class="face face-one">M</span><span class="face face-two">J</span><span class="face face-three">K</span></div><span>+5 with you</span></div></div></div></article>
+          <article class="feature-card listening-card" id="room-listening"><div class="listening-top"><span class="live-pill live-pill-soft"><i></i> LISTENING TOGETHER</span><button class="more-button" aria-label="More options">•••</button></div><div class="record-art"><div class="record"><div class="record-label">jp<span>♫</span></div></div><span class="sparkle sparkle-one">✳</span><span class="sparkle sparkle-two">✳</span></div><div class="listen-info"><p class="eyebrow">A SHARED LISTENING ROOM</p><h3>Soft sounds,<br />vol. 4</h3><p>Good music for doing nothing at all.</p><div class="listen-bottom"><div class="attendees"><div class="avatar-stack"><span class="face face-four">S</span><span class="face face-five">D</span><span class="face face-six">A</span></div><span>5 listening</span></div><button class="round-play join-room" aria-label="Join listening room">▶</button></div></div></article>
+        </section>
+
+        <section class="section" id="friends"><div class="section-heading"><div><p class="eyebrow">YOUR PEOPLE, RIGHT NOW</p><h2>Friends are into</h2></div><a href="#friends" class="see-all">See all <span>↗</span></a></div><div class="friend-activity"><div class="activity-item"><div class="avatar activity-avatar activity-maya">M</div><div class="activity-copy"><strong>Maya Chen</strong><span>is reading <b>Tomorrow, and Tomorrow, and Tomorrow</b></span></div><button class="activity-action">Read together <span>↗</span></button></div><div class="activity-item"><div class="avatar activity-avatar activity-jordan">J</div><div class="activity-copy"><strong>Jordan Lee</strong><span>made a playlist <b>songs for the long way home</b></span></div><button class="activity-action">Give it a listen <span>↗</span></button></div><div class="activity-item"><div class="avatar activity-avatar activity-sam">S</div><div class="activity-copy"><strong>Sam Rivera</strong><span>is watching <b>Perfect Days</b> with friends</span></div><button class="activity-action">Join the room <span>↗</span></button></div></div></section>
+
+        <section class="section picks-section" id="library"><div class="section-heading"><div><p class="eyebrow">A FEW GOOD THINGS</p><h2>Picked for your week</h2></div><div class="carousel-controls"><button aria-label="Previous">←</button><button aria-label="Next">→</button></div></div><div class="picks-grid">
+          <article class="pick-card"><div class="cover book-cover"><span class="cover-kicker">A NOVEL</span><strong>Tomorrow,<br />and Tomorrow,<br />and Tomorrow</strong><span class="cover-author">GABRIELLE ZEVIN</span><i class="cover-shape"></i></div><div class="pick-meta"><span class="type-tag book-tag">BOOKS</span><span class="friend-reco">Maya is reading this</span></div><h3>Tomorrow, and Tomorrow, and Tomorrow</h3><p>Gabrielle Zevin <span>·</span> Fiction</p></article>
+          <article class="pick-card"><div class="cover music-cover"><div class="music-orb"></div><span class="music-cover-title">HONEY<br />MOON</span><span class="cover-author">JAPANESE BREAKFAST</span></div><div class="pick-meta"><span class="type-tag music-tag">MUSIC</span><span class="friend-reco">Jordan made a room</span></div><h3>Jubilee</h3><p>Japanese Breakfast <span>·</span> Album</p></article>
+          <article class="pick-card"><div class="cover film-cover"><div class="film-sun"></div><span class="film-title">PERFECT<br />DAYS</span><span class="film-subtitle">A FILM BY WIM WENDERS</span><span class="film-caption">A little beauty in every day.</span></div><div class="pick-meta"><span class="type-tag film-tag">FILM</span><span class="friend-reco">Sam loved this</span></div><h3>Perfect Days</h3><p>Wim Wenders <span>·</span> Drama</p></article>
+          <article class="pick-card"><div class="cover writing-cover"><span class="writing-small">A NOTE FROM</span><strong>the<br />in-between</strong><span class="writing-byline">A COMMUNITY ZINE</span><span class="writing-star">✳</span></div><div class="pick-meta"><span class="type-tag write-tag">WRITING</span><span class="friend-reco">12 new pieces</span></div><h3>The In-Between, issue 03</h3><p>Made by your community <span>·</span> Zine</p></article>
+        </div></section>
+        <footer><span class="footer-brand">juicyplum<span>.</span></span><span>Culture is better together.</span><a href="#about">About the community ↗</a></footer>
+      </div>
+    </main>
+    <section class="reader-view" id="reader-view" aria-label="Mobile reading view" aria-hidden="true">
+      <header class="reader-header"><button class="reader-back" id="reader-back" aria-label="Close reading view">←</button><span>YOUR READING SPACE</span><button class="reader-menu" aria-label="Reading options">•••</button></header>
+      <div class="reader-main">
+        <div class="reader-intro"><p class="eyebrow">A QUIET PLACE TO READ</p><h2>Pick up where<br />you left off.</h2><p>Swipe through your shelf, then settle into a book.</p></div>
+        <div class="reader-book-stage" id="reader-book-stage" tabindex="0" aria-label="Swipe left or right to choose a book">
+          <article class="reader-book active" data-title="Tomorrow, and Tomorrow, and Tomorrow" data-author="Gabrielle Zevin" data-color="sage"><div class="reader-cover reader-cover-one"><span>A NOVEL</span><strong>Tomorrow,<br />and Tomorrow,<br />and Tomorrow</strong><small>GABRIELLE ZEVIN</small></div><div class="reader-book-info"><strong>Tomorrow, and Tomorrow, and Tomorrow</strong><span>Gabrielle Zevin · 34% read</span><div class="reader-progress"><i style="width:34%"></i></div></div></article>
+          <article class="reader-book" data-title="Crying in H Mart" data-author="Michelle Zauner" data-color="rose"><div class="reader-cover reader-cover-two"><span>A MEMOIR</span><strong>CRYING<br />IN H MART</strong><small>MICHELLE ZAUNER</small></div><div class="reader-book-info"><strong>Crying in H Mart</strong><span>Michelle Zauner · 12% read</span><div class="reader-progress"><i style="width:12%"></i></div></div></article>
+          <article class="reader-book" data-title="The Creative Act" data-author="Rick Rubin" data-color="ochre"><div class="reader-cover reader-cover-three"><span>A WAY OF BEING</span><strong>THE<br />CREATIVE<br />ACT</strong><small>RICK RUBIN</small></div><div class="reader-book-info"><strong>The Creative Act</strong><span>Rick Rubin · New to your shelf</span><div class="reader-progress"><i style="width:0%"></i></div></div></article>
+        </div>
+        <div class="reader-controls"><button id="reader-prev" aria-label="Previous book">←</button><div class="reader-dots"><i class="selected"></i><i></i><i></i></div><button id="reader-next" aria-label="Next book">→</button></div>
+        <button class="reader-open" id="reader-open">Open this book <span>↗</span></button>
+        <p class="swipe-hint">SWIPE TO EXPLORE YOUR SHELF</p>
+      </div>
+      <div class="reader-page" id="reader-page" aria-hidden="true"><div class="page-top"><button id="page-back" aria-label="Back to shelf">← &nbsp; My shelf</button><span>JUICYPLUM READER</span><button class="page-type" aria-label="Reading settings">Aa</button></div><article class="page-paper"><p class="page-chapter">A PASSAGE TO PAUSE WITH</p><h2 id="page-title">Tomorrow, and Tomorrow, and Tomorrow</h2><p id="page-byline" class="page-byline">Gabrielle Zevin</p><hr /><p class="page-excerpt">Some afternoons seem to stretch beyond the clock. The light moves slowly across the room, and an unfinished thought finds the space it needs to become something new.</p><p class="page-excerpt">A story can be a small room we enter together. We bring our own memories with us, and leave with a few new ones tucked away.</p><div class="page-bottom"><span>◦ &nbsp; Sample reading view</span><button id="page-next">NEXT PAGE &nbsp; →</button></div></article></div>
+    </section>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="modal-backdrop" id="modal" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="close-modal" aria-label="Close">×</button><p class="eyebrow">BRING EVERYONE TOGETHER</p><h2 id="modal-title">What are we sharing?</h2><p>Pick a starting point. Your friends can join from wherever they watch or listen.</p><div class="room-options"><button data-room="Watch party"><span>▻</span><strong>Watch party</strong><small>Movies, shows, and videos</small></button><button data-room="Listening room"><span>♫</span><strong>Listening room</strong><small>Albums, playlists, and more</small></button><button data-room="Reading circle"><span>▤</span><strong>Reading circle</strong><small>Books, pages, and ideas</small></button></div><div class="modal-note">✦ &nbsp; Everyone brings their own subscriptions.</div></section></div>
+    <script src="app.js"></script>
+  </body>
+</html>
